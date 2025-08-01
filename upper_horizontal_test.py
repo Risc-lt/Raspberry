@@ -27,10 +27,10 @@ def test_lower_horizontal():
         time.sleep(1)
         
         # 测试上方水平杆收缩
-        # print("测试2: 上方水平杆收缩")
-        # print(f"收缩时间: {robot.extend_time}秒")
-        # robot.control_upper_horizontal_retract(robot.extend_time)
-        # time.sleep(1)
+        print("测试2: 上方水平杆收缩")
+        print(f"收缩时间: {robot.extend_time}秒")
+        robot.control_upper_horizontal_retract(robot.extend_time)
+        time.sleep(1)
         
         print("上方水平杆测试完成!")
         

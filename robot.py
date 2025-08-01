@@ -51,21 +51,21 @@ class ClimbingRobot:
 
         # 时间参数 (秒) - 为每种杆设置独立的时间
         # 30cm直径柱子的收缩时间
-        self.radial_retract_time_30cm = 3.0  # 径向杆收缩时间 TODO:
-        self.horizontal_retract_time_30cm = 1.5  # 水平杆收缩时间 TODO:
+        self.radial_retract_time_30cm = 3.0  # 径向杆收缩时间
+        self.horizontal_retract_time_30cm = 1.5  # 水平杆收缩时间 
 
         # 60cm直径柱子的收缩时间
-        self.radial_retract_time_60cm = 10.0  # 径向杆收缩时间 TODO:
-        self.horizontal_retract_time_60cm = 1.0  # 水平杆收缩时间 TODO:
+        self.radial_retract_time_60cm = 10.0  # 径向杆收缩时间 
+        self.horizontal_retract_time_60cm = 1.0  # 水平杆收缩时间 
 
         # 攀爬时的时间参数
-        self.extend_time = 3.0  # 径向杆伸长5cm所需时间 TODO:
-        self.vertical_extend_time = 3.0  # 竖直杆伸长时间 TODO:
-        self.servo_rotation_time = 0.5  # 舵机旋转时间 TODO:
+        self.extend_time = 3.0  # 径向杆伸长5cm所需时间 
+        self.vertical_extend_time = 3.0  # 竖直杆伸长时间 
+        self.servo_rotation_time = 0.5  # 舵机旋转时间 
 
         # 最终松开时间参数
-        self.final_extend_time_rad = 20.0  # 最终伸长时间（秒）TODO:
-        self.final_extend_time_hor = 6.0  # 最终伸长时间（秒）TODO:
+        self.final_extend_time_rad = 20.0  # 最终伸长时间（秒）
+        self.final_extend_time_hor = 6.0  # 最终伸长时间（秒）
 
         # 系统参数
         self.height_tolerance = 2.0  # 高度容忍度 (cm)
@@ -269,7 +269,6 @@ class ClimbingRobot:
         self.upper_servo.ChangeDutyCycle(duty_cycle)
         time.sleep(self.servo_rotation_time)
 
-    # TODO: NO NEED
     def rotate_upper_servo_cw(self, degrees=5):
         """上方舵机顺时针旋转（杆向前）"""
         logger.info(f"上方舵机顺时针旋转 {degrees}度")
@@ -284,7 +283,6 @@ class ClimbingRobot:
         self.lower_servo.ChangeDutyCycle(duty_cycle)
         time.sleep(self.servo_rotation_time)
 
-    # TODO: NO NEED
     def rotate_lower_servo_cw(self, degrees=5):
         """下方舵机顺时针旋转（杆向前）"""
         logger.info(f"下方舵机顺时针旋转 {degrees}度")
@@ -356,7 +354,6 @@ class ClimbingRobot:
         logger.info("60cm直径柱子初始收缩完成")
 
     # 攀爬步骤函数
-    # TODO: 测试
     def climb_one_step_upper(self):
         """上方杆攀爬一步"""
         logger.info("执行上方杆攀爬步骤...")
@@ -378,7 +375,6 @@ class ClimbingRobot:
 
         logger.info("上方杆攀爬步骤完成")
 
-    # TODO: 测试
     def climb_one_step_lower(self):
         """下方杆攀爬一步"""
         logger.info("执行下方杆攀爬步骤...")

@@ -21,16 +21,16 @@ def test_lower_radial():
         print("按Ctrl+C退出\n")
         
         # 测试下方径向杆伸长
-        # print("测试1: 下方径向杆伸长")
-        # print(f"伸长时间: {robot.extend_time}秒")
+        print("测试1: 下方径向杆伸长")
+        print(f"伸长时间: {robot.extend_time}秒")
         robot.control_lower_radial_extend(4)
-        # time.sleep(1)
+        time.sleep(1)
         
         # 测试下方径向杆收缩
-        # print("测试2: 下方径向杆收缩")
-        # print(f"收缩时间: {robot.extend_time}秒")
-        # robot.control_lower_radial_retract(10)
-        # time.sleep(1)
+        print("测试2: 下方径向杆收缩")
+        print(f"收缩时间: {robot.extend_time}秒")
+        robot.control_lower_radial_retract(10)
+        time.sleep(1)
         
         print("下方径向杆测试完成!")
         

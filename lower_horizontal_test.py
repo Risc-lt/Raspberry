@@ -23,7 +23,7 @@ def test_lower_horizontal():
         # 测试下方水平杆伸长
         print("测试1: 下方水平杆伸长")
         print(f"伸长时间: {robot.extend_time}秒")
-        # robot.control_lower_horizontal_extend(robot.extend_time)
+        robot.control_lower_horizontal_extend(robot.extend_time)
         time.sleep(1)
         
         # 测试下方水平杆收缩

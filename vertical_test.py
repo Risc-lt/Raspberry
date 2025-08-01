@@ -21,16 +21,16 @@ def test_vertical():
         print("按Ctrl+C退出\n")
         
         # 测试竖直杆伸长
-        # print("测试1: 竖直杆伸长")
-        # print(f"伸长时间: {robot.vertical_extend_time}秒")
-        # robot.control_vertical_extend(15)
-        # time.sleep(1)
+        print("测试1: 竖直杆伸长")
+        print(f"伸长时间: {robot.vertical_extend_time}秒")
+        robot.control_vertical_extend(15)
+        time.sleep(1)
         
         # 测试竖直杆收缩
-        # print("测试2: 竖直杆收缩")
-        # print(f"收缩时间: {robot.vertical_extend_time}秒")
+        print("测试2: 竖直杆收缩")
+        print(f"收缩时间: {robot.vertical_extend_time}秒")
         robot.control_vertical_retract(15)
-        # time.sleep(1)
+        time.sleep(1)
         
     except KeyboardInterrupt:
         print("\n测试中断")
